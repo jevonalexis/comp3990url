@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etRoom"
+            android:hint="Room Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/etRoom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/layout_fac">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Faculty: "
+                android:id="@+id/tv_facultyText"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerFaculty"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout_fac"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/layout_builing">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Building: "
+                android:id="@+id/tv_buildingText"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerBldng"
+                />
+        </LinearLayout>
+
+
+
+        <com.xgc1986.ripplebutton.widget.RippleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonColor="#4CAF50"
+            app:rippleColor="#388E3C"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btn_save"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+           />
+
+
+
+        <com.xgc1986.ripplebutton.widget.RippleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonColor="#1976D2"
+            app:rippleColor="#0D47A1"
+            android:text="View map"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btn_map1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

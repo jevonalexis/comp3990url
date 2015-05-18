@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#131313"
+    android:layout_below="@+id/app_bar">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:background="#131313"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Search By Room Name"
+        android:textColor="#ffffff"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <!--android:textColor="@color/primaryColorDark"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/et_roomname"
+        android:hint="Enter Room Name To Search"
+        android:textColorHint="#777777"
+        android:textColor="#ffffff"
+        />
+
+    <com.xgc1986.ripplebutton.widget.RippleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonColor="#4CAF50"
+        app:rippleColor="#388E3C"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btn_searchRoom"
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

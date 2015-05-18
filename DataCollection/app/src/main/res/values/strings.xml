@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">URL admin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="faculties">
+        <item name="FST"> "FST" </item>
+        <item name="FFA"> "FFA" </item>
+        <item name="FSS"> "FSS" </item>
+        <item name="FHE"> "FHE" </item>
+        <item name="FL"> "FL" </item>
+        <item name="FE"> "FE" </item>
+        <item name="General"> "General" </item>
+    </string-array>
+    <string-array name="buildings">
+        <item name="NatSci"> "Natural Sciences" </item>
+        <item name="Chemistry"> "Chemistry" </item>
+        <item name="Law"> "Law" </item>
+        <item name="DudleyHuggins"> "Dudley Huggins" </item>
+        <item name="FrankStockdale"> "Sir Frank Stockdale" </item>
+        <item name="HumanitiesEducation"> "Humanities and Education" </item>
+        <item name="LRC"> "LRC" </item>
+        <item name="Daaga"> "Daaga" </item>
+    </string-array>
+    <string name="title_activity_view_db">ViewDb</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_landmark">Landmark</string>
+    <string name="title_activity_login">URL admin</string>
+</resources>
